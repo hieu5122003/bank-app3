@@ -6,3 +6,6 @@ from datetime import datetime
 def create_connection():
     conn = sqlite.connect("bank_accounts.db")
     return conn
+def create_table():
+    conn = create_connection()
+    cursor = conn.cursor()
